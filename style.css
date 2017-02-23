@@ -1,0 +1,12 @@
+/*
+Theme Name: Olepod
+Theme URI: https://github.com/vanjaanderson/olepod
+Author: Vanja Anderson / Carin Nöjd
+Author URI: https://github.com/vanjaanderson/olepod
+Description: A child theme based on Twenty Seventeen theme. Made for a podcast site.
+Version: 0.1.0
+Template: twentyseventeen
+Tags: Podcast, Audio-recording, Twenty Seventeen Child-theme
+*/
+
+@import url("../twentyseventeen/style.css");
