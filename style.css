@@ -10,3 +10,51 @@ Tags: Podcast, Audio-recording, Twenty Seventeen Child-theme
 */
 
 @import url("../twentyseventeen/style.css");
+
+/* 
+-----------------------------------
+S I T E - B R A N D I N G  element
+-----------------------------------
+*/
+/* Move .site-branding to the top */
+.has-header-image.twentyseventeen-front-page .site-branding, .has-header-video.twentyseventeen-front-page .site-branding, .has-header-image.home.blog .site-branding, .has-header-video.home.blog .site-branding {
+    top: -260px;
+}
+@media screen and (min-width: 30em) {
+	/* Move .site-branding to the top */
+	.has-header-image.twentyseventeen-front-page .site-branding, .has-header-video.twentyseventeen-front-page .site-branding, .has-header-image.home.blog .site-branding, .has-header-video.home.blog .site-branding {
+    	top: -100px;
+    }
+}
+@media screen and (min-width: 48em) {
+	/* Move .site-branding to the top */
+	.has-header-image.twentyseventeen-front-page .site-branding, .has-header-video.twentyseventeen-front-page .site-branding, .has-header-image.home.blog .site-branding, .has-header-video.home.blog .site-branding {
+    	top: 230px;
+    }
+}
+
+/* Custom text inserted in templates-parts/header/site-branding.php */
+#custom-text {
+	margin-top: 1em;
+	margin-left: -1em;
+	margin-bottom: 2em;
+	padding: 1em 1em 0.1em 1em;
+	max-width: 380px;
+	background-color: rgba(0,0,0,0.6);
+}
+
+#custom-text p {
+	color: rgba(255,255,255,0.4);
+	font-size: 0.9em;
+}
+
+/* Pitch Button */
+#pitch {
+	text-transform: uppercase;
+	padding: 1em;
+	border: 2px solid rgba(255,255,255,0.8);
+	color: rgba(255,255,255,0.8);
+	font-weight: 600;
+	letter-spacing: 3px;
+	margin-left: 20%;
+}
