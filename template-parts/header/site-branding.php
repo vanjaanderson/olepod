@@ -8,7 +8,7 @@
  * @version 1.0
  */
 
-// Custom text
+// Custom text in heredoc syntax
 $txt = <<<EOD
 <div id="custom-text">
 <p>&hellip;är en podcast som fokuserar på dig och din historia. Det spelar ingen roll vem du är... om du har en bra historia, och vi vill höra dig berätta den!</p>
@@ -25,6 +25,8 @@ EOD;
 
 		<?php the_custom_logo(); ?>
 
+
+
 		<div class="site-branding-text">
 			<?php if ( is_front_page() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -39,11 +41,11 @@ EOD;
 				<!-- Custom text -->
 				<?= $txt ?>
 				<!-- Pitch Button -->
-				<a id="pitch" href="#">Spela in pitch</a>
+				<a id="pitch" href="/pitch/">Spela in pitch</a>
 		</div><!-- .site-branding-text -->
 
 		<?php if ( ( twentyseventeen_is_frontpage() || ( is_home() && is_front_page() ) ) && ! has_nav_menu( 'top' ) ) : ?>
-		<a href="#content" class="menu-scroll-down"><?php echo twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ); ?><span class="screen-reader-text"><?php _e( 'Scroll down to content', 'twentyseventeen' ); ?></span></a>
+		<!-- <a href="#content" class="menu-scroll-down"><?php echo twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ); ?><span class="screen-reader-text"><?php _e( 'Scroll down to content', 'twentyseventeen' ); ?></span></a> -->
 	<?php endif; ?>
 
 	</div><!-- .wrap -->

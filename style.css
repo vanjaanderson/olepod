@@ -13,6 +13,14 @@ Tags: Podcast, Audio-recording, Twenty Seventeen Child-theme
 
 /* 
 -----------------------------------
+N A V I G A T I O N  component
+-----------------------------------
+*/
+
+
+
+/* 
+-----------------------------------
 S I T E - B R A N D I N G  element
 -----------------------------------
 */
@@ -57,4 +65,12 @@ S I T E - B R A N D I N G  element
 	font-weight: 600;
 	letter-spacing: 3px;
 	margin-left: 20%;
+}
+
+.site-title {
+	margin-bottom: 0.2em;
+}
+
+.site-description {
+	font-style: italic;
 }
