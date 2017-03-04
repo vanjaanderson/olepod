@@ -43,9 +43,9 @@
 
 	<?php
 	// If a regular post or page, and not the front page, show the featured image.
-	if ( has_post_thumbnail() && ( is_single() || ( is_page() && ! twentyseventeen_is_frontpage() ) ) ) :
+	if ( has_post_thumbnail() && ( is_single() || ( is_page() && ! olepod_is_frontpage() ) ) ) :
 		echo '<div class="single-featured-image-header">';
-		the_post_thumbnail( 'twentyseventeen-featured-image' );
+		the_post_thumbnail( 'olepod-featured-image' );
 		echo '</div><!-- .single-featured-image-header -->';
 	endif;
 	?>
